@@ -8,6 +8,9 @@ gem 'rails', '3.2.13'
 #gem 'sqlite3'
 gem 'mysql2', '0.3.11'
 
+gem 'execjs', '~>1.4.0'
+gem 'therubyracer', '~>0.11.4'
+
 group :development,:test do
   gem 'quiet_assets'
   gem 'rspec-rails', '~>2.14.0'
