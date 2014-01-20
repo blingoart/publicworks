@@ -1,0 +1,199 @@
+// Place all the styles related to the site controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@font-face {
+	font-family: "lato";
+	font-style: normal;
+	font-weight: normal;
+	src: font-url('Lato-Reg.otf');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: lato, helvetica, sans-serif;
+  font-size: 24px;
+  color: #464646;
+}
+
+img {
+  border: none;
+}
+
+.display-none {
+  display: none;
+}
+
+.center-page-container {
+  margin: 0 auto 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+.center-content {
+  text-align: center;
+}
+
+.center-all-container {
+  display: table;
+  position: absolute;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.center-all-cell {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#homepage-logo {
+  float: left;
+  clear: both;
+  width: 100%;
+  margin: 125px 0 0 0;
+  padding: 0;
+}
+
+#homepage-container {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+#homepage-top {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+#homepage-bottom {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  padding: 0;
+  background-color: #ebebeb;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+}
+
+#newsletter-container {
+  display: inline-block;
+  text-align: center;
+  margin: 60px 0 0 0;
+}
+
+.newsletter-field {
+  float: left;
+  clear: none;
+  width: 292px;
+  height: 44px;
+  margin: 0;
+  padding: 4px;
+  font-size: 18px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+}
+
+#newsletter-submit {
+  float: left;
+  clear: none;
+  width: 86px;
+  height: 53px;
+  margin: 0 0 0 18px;
+  padding: 0;
+  border: none;
+}
+
+.newsletter-errors-spacer {
+  margin: 0;
+  padding: 0;
+  height: 20px;
+}
+
+#newsletter-errors {
+  font-size: 16px;
+  color: #ff0000;
+}
+
+#newsletter-thanks {
+  height: 50px;
+  padding: 4px;
+}
+
+@media only screen
+and (min-width : 320px)
+and (max-width : 470px) {
+/* STYLES GO HERE */
+
+  .newsletter-field {
+    display: block;
+    float: none;
+    clear: both;
+    width: 250px;
+  }
+
+  #newsletter-submit {
+    float: none;
+    clear: both;
+    margin: 10px 0 0 0;
+  }
+
+  #newsletter-errors {
+    font-size: 14px;
+    color: #ff0000;
+  }
+
+  #newsletter-thanks {
+    height: 112px;
+    padding: 4px;
+  }
+
+}
+
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
+/* STYLES GO HERE */
+
+  #newsletter-container {
+    margin: 12px 0 0 0;
+  }
+
+}
+
+@media only screen
+and (min-width : 420px)
+and (max-width : 480px) {
+/* STYLES GO HERE */
+
+  #newsletter-thanks {
+    height: 52px;
+    padding: 4px;
+  }
+
+}

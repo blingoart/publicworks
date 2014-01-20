@@ -1,0 +1,36 @@
+<div id="homepage-container">
+
+  <div id="homepage-top">
+
+    <div class="center-all-container">
+      <div class="center-all-cell">
+        <%= link_to image_tag("publicworks_logo.png", :width => "245", :height => "81"), root_path %>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="homepage-bottom">
+    <div class="center-all-container">
+      <div class="center-all-cell">
+        <div class="newsletter-errors-spacer"></div>
+        An art investment platform.
+        <div class="center-page-container">
+          <div id="newsletter-container">
+
+            <%= form_tag newsletter_path, :remote => true do %>
+            <div id="newsletter">
+              <%= label_tag :email, nil, :class => "display-none" %> <%= text_field_tag :email, nil, :title => "Please enter your email address", :placeholder => "Sign up for our Newsletter", :class => "newsletter-field" %>
+              <%= image_submit_tag image_path("join.png"), :id => "newsletter-submit" %>
+            </div>
+            <% end %>
+
+          </div>
+        </div>
+        <div class="newsletter-errors-spacer" id="newsletter-errors"></div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

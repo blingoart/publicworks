@@ -1,0 +1,22 @@
+var msg = "";
+<% if defined? @newsletter %>
+  $("#newsletter-errors").html("");
+  <% if @newsletter.errors.any? %>
+      <% @newsletter.errors.full_messages.each do |msg| %>
+        msg += '<%= msg %> &nbsp;';
+      <% end %>
+      $("#newsletter-errors").html(msg);
+  <% else %>
+    msg = '<div id="newsletter-thanks">Thanks, <%= @newsletter.email %>.</div>';
+    replace_newsletter(msg);
+  <% end %>
+<% else %>
+  msg = '<div id="newsletter-thanks">Thanks, <%= @prelaunch.email %>.</div>';
+  replace_newsletter(msg);
+<% end %>
+
+function replace_newsletter(msg) {
+  $("#newsletter").hide();
+  $("#newsletter").html(msg);
+  $("#newsletter").fadeIn(400);
+}
