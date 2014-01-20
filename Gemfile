@@ -15,6 +15,7 @@ group :development,:test do
   #gem 'webrat', '~>0.7.3'
   gem 'database_cleaner', '~>1.0.1'
   gem 'factory_girl_rails', '~>4.2.0'
+  gem 'capistrano', '~> 2.15.5'
   #gem "sqlite3"
 end
 
